@@ -3,5 +3,6 @@ src/Formatter.java
 src/GradeReport.java
 src/HtmlFormatter.java
 src/Main.java
+src/MarkdownFormatter.java
 src/Report.java
 src/TextFormatter.java

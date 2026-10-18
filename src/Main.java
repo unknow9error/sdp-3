@@ -24,7 +24,12 @@ public class Main {
                 new GradeReport("grades", GRADES, new HtmlFormatter()).execute(),
                 "<article><h1>Grades</h1><p>Average: 80</p></article>");
         runtimeSwitch();
-        // EXTENSION_CHECKS
+        compare("T6", "AttendanceReport + MarkdownFormatter",
+                new AttendanceReport("attendance", SESSIONS, new MarkdownFormatter()).execute(),
+                "## Attendance\n\n3 of 4 attended (75%)");
+        compare("T7", "GradeReport + MarkdownFormatter",
+                new GradeReport("grades", GRADES, new MarkdownFormatter()).execute(),
+                "## Grades\n\nAverage: 80");
         System.out.println("SUMMARY: " + passed + "/" + total + " PASS");
         if (passed != total) System.exit(1);
     }
