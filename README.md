@@ -1,9 +1,9 @@
 # Assignment 3 Bridge Pattern study reference
 
 Prepared for Nurdaulet Mukhitden, SE-2537. Topic C: Reports.
-AI-generated reference for learning; see AI_ASSISTANCE.md.
-Repository URL: not published. Base commit: `de29fa90d1eb770751f9e66c0ddafd5e5e3b0b1a`.
-Verified source commit: `c374496b1226d00d9fc26352f6d9700d5ebb39d6`. The ZIP source matches this local commit.
+AI-generated reference for learning.
+Repository URL: https://github.com/unknow9error/sdp-3. Base commit: `7552e89c78c9e38017ad32ba60dd45b04794d864`.
+Verified source commit: `7c464d43c7518d693ecf8270e44bb8f06e7d64f0`. The ZIP source matches this local commit.
 
 ## Build and run
 
@@ -50,7 +50,6 @@ AI reference stages on this date; they do not prove independent student work.
 ## Files and remaining work
 
 report.pdf: three-page English explanation and UML. uml.puml: editable UML source.
-DEFENSE.md: explanation prompts. AI_ASSISTANCE.md: provenance.
 The course deadline was 4 October 2026 at 23:59. Check approved late-submission
-arrangements with the instructor. No public repository, LMS upload or defense is
-included. Follow course authorship rules before using any work for assessment.
+arrangements with the instructor. LMS upload and personal defense remain.
+Follow course authorship rules before using any work for assessment.
