@@ -1,0 +1,38 @@
+@startuml
+abstract class Report {
+  - id : String
+  - implementation : Formatter
+  + getId() : String
+  + execute() : String
+  + setImplementation(Formatter) : void
+  # format(String, String) : String
+}
+class AttendanceReport {
+  - sessions : List<Boolean>
+  + getSessions() : List<Boolean>
+  + execute() : String
+}
+class GradeReport {
+  - grades : List<Integer>
+  + getGrades() : List<Integer>
+  + execute() : String
+}
+interface Formatter {
+  + format(String, String) : String
+}
+class TextFormatter
+class HtmlFormatter
+class MarkdownFormatter
+class Main
+Report <|-- AttendanceReport
+Report <|-- GradeReport
+Report o-- "1" Formatter
+Formatter <|.. TextFormatter
+Formatter <|.. HtmlFormatter
+Formatter <|.. MarkdownFormatter
+Main ..> AttendanceReport
+Main ..> GradeReport
+Main ..> TextFormatter
+Main ..> HtmlFormatter
+Main ..> MarkdownFormatter
+@enduml
